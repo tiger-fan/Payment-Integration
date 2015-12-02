@@ -1,0 +1,275 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=ISO-8859-1", "http-equiv" => "Content-Type"}/
+    %title PayPal Rest API Samples
+    :css
+      .imagelink {
+      	padding: 5px 0px 5px 28px;
+      }
+
+      .execute {
+      	background: url('images/play_button.png') no-repeat left top;
+      }
+
+      .source {
+      	background: url('images/edt-format-source-button.png') no-repeat left
+      		top;
+      }
+
+      .header {
+        font-weight: bold;
+      }
+
+      .header td {
+        padding: 10px 0px 10px 0px;
+      }
+  %body
+    %center
+      %h3 PayPal REST API Samples
+    %br/
+    %br/
+    %table{:cellspacing => "5", :width => "85%"}
+      %tbody
+        %tr{:valign => "top", :class => "header"}
+          %td Payments
+        %tr{:valign => "top"}
+          %td Direct credit card payments
+          %td
+          %td{:width => "30%"}
+            %a.execute.imagelink{:href => "payment/create_with_credit_card"} Execute
+          %td
+          %td{:width => "30%"}
+            %a.source.imagelink{:href => "payment/create_with_credit_card.html"} Source
+        %tr
+          %td PayPal Account Payments
+          %td
+          %td
+            %a.execute.imagelink{:href => "payment/create_with_paypal"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "payment/create_with_paypal.html"} Source
+        %tr
+          %td Saved credit card payments
+          %td
+          %td
+            %a.execute.imagelink{:href => "payment/create_with_credit_card_token"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "payment/create_with_credit_card_token.html"} Source
+        %tr
+          %td Get Payment Details
+          %td
+          %td
+            %a.execute.imagelink{:href => "payment/find"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "payment/find.html"} Source
+        %tr
+          %td Get Payment History
+          %td
+          %td
+            %a.execute.imagelink{:href => "payment/all"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "payment/all.html"} Source
+        %tr
+          %td Get Sale Details
+          %td
+          %td
+            %a.execute.imagelink{:href => "sale/find"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "sale/find.html"} Source
+        %tr
+          %td Refund a Payment
+          %td
+          %td
+            %a.execute.imagelink{:href => "sale/refund"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "sale/refund.html"} Source
+        %tr{:valign => "top", :class => "header"}
+          %td Payouts
+        %tr
+          %td Create Single Payout
+          %td
+          %td
+            %a.execute.imagelink{:href => "payouts/createSync"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "payouts/createSync.html"} Source
+        %tr
+          %td Create Batch Payout
+          %td
+          %td
+            %a.execute.imagelink{:href => "payouts/create"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "payouts/create.html"} Source
+        %tr
+          %td Get Payout Batch Status
+          %td
+          %td
+            %a.execute.imagelink{:href => "payouts/get_batch_status"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "payouts/get_batch_status.html"} Source
+        %tr
+          %td Get Payout Item Status
+          %td
+          %td
+            %a.execute.imagelink{:href => "payouts/get_item_status"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "payouts/get_item_status.html"} Source
+        %tr
+          %td Cancel Unclaimed Payout
+          %td
+          %td
+            %a.execute.imagelink{:href => "payouts/cancel"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "payouts/cancel.html"} Source
+        %tr{:valign => "top", :class => "header"}
+          %td Notifications
+        %tr
+          %td Get All Webhook Event Types
+          %td
+          %td
+            %a.execute.imagelink{:href => "notifications/get_webhooks_event_types"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "notifications/get_webhooks_event_types.html"} Source
+        %tr
+          %td Create Webhook
+          %td
+          %td
+            %a.execute.imagelink{:href => "notifications/create"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "notifications/create.html"} Source
+        %tr
+          %td Get Webhook
+          %td
+          %td
+            %a.execute.imagelink{:href => "notifications/get_webhook"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "notifications/get_webhook.html"} Source
+        %tr
+          %td Update webhook
+          %td
+          %td
+            %a.execute.imagelink{:href => "notifications/update_webhook"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "notifications/update_webhook.html"} Source
+        %tr
+          %td Get Webhook Subscribed Event Types
+          %td
+          %td
+            %a.execute.imagelink{:href => "notifications/get_subscribed_webhooks_event_types"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "notifications/get_subscribed_webhooks_event_types.html"} Source
+        %tr
+          %td Get all webhooks
+          %td
+          %td
+            %a.execute.imagelink{:href => "notifications/get_all_webhooks"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "notifications/get_all_webhooks.html"} Source
+        %tr
+          %td Delete webhook
+          %td
+          %td
+            %a.execute.imagelink{:href => "notifications/delete_webhook"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "notifications/delete_webhook.html"} Source
+        %tr
+          %td Simulate webhook event
+          %td
+          %td
+            %a.execute.imagelink{:href => "notifications/simulate_event"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "notifications/simulate_event.html"} Source
+        %tr{:valign => "top", :class => "header"}
+          %td Vault
+        %tr
+          %td Save a credit card
+          %td
+          %td
+            %a.execute.imagelink{:href => "credit_card/create"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "credit_card/create.html"} Source
+        %tr
+          %td Get credit card details
+          %td
+          %td
+            %a.execute.imagelink{:href => "credit_card/find"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "credit_card/find.html"} Source
+        %tr
+          %td Delete credit card
+          %td
+          %td
+            %a.execute.imagelink{:href => "credit_card/delete"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "credit_card/delete.html"} Source
+        %tr{:valign => "top", :class => "header"}
+          %td Authorization and Capture
+        %tr
+          %td Get an authorized payment details
+          %td
+          %td
+            %a.execute.imagelink{:href => "authorization/find"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "authorization/find.html"} Source
+        %tr
+          %td Reauthorization
+          %td
+          %td
+            %a.execute.imagelink{:href => "authorization/reauthorize"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "authorization/reauthorize.html"} Source
+        %tr
+          %td Capture an authorized payment
+          %td
+          %td
+            %a.execute.imagelink{:href => "authorization/capture"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "authorization/capture.html"} Source
+        %tr
+          %td Void an authorized payment
+          %td
+          %td
+            %a.execute.imagelink{:href => "authorization/void"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "authorization/void.html"} Source
+        %tr
+          %td Get captured payment details
+          %td
+          %td
+            %a.execute.imagelink{:href => "capture/find"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "capture/find.html"} Source
+        %tr
+          %td Refund captured payment
+          %td
+          %td
+            %a.execute.imagelink{:href => "capture/refund"} Execute
+          %td
+          %td
+            %a.source.imagelink{:href => "capture/refund.html"} Source
